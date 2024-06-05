@@ -5,11 +5,28 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    position: relative;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Позволяет разместить контент поверх фона */
+}
+
+.background iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none; /* Это делает iframe недоступным для кликов */
 }
 
 header {
-    background-image: url('images/background-pixel-art.png'); /* Пиксельное фоновое изображение */
-    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон */
     padding: 50px 0;
 }
 
@@ -34,6 +51,8 @@ header p {
 
 section {
     padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон для секций */
+    margin-bottom: 20px;
 }
 
 form {
@@ -82,4 +101,3 @@ form label, form select, form button {
     font-size: 18px;
     color: green;
 }
-
