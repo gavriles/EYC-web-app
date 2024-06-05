@@ -42,7 +42,7 @@ form {
     align-items: center;
 }
 
-form label, form input, form select, form button {
+form label, form select, form button {
     margin: 10px 0;
     font-size: 16px;
 }
@@ -56,7 +56,7 @@ form label, form input, form select, form button {
 .gallery img {
     width: 150px;
     height: 150px;
-    image-rendering: pixelated; /* Пикселизация изображения */
+    image-rendering: pixelated; /* Пикселизация изображений */
 }
 
 .review {
@@ -72,3 +72,14 @@ form label, form input, form select, form button {
     image-rendering: pixelated;
     margin-bottom: 10px;
 }
+
+.hidden {
+    display: none;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+}
+
