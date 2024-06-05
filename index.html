@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бронирование кают на яхте</title>
+    <title>Pixel Yacht Adventures</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
-        <h1>Приключения на Яхте</h1>
-        <p>Бронируйте вашу каюту и отправляйтесь в незабываемое путешествие по Средиземному морю</p>
-        <a href="#booking" class="button">Забронировать</a>
+        <h1>Pixel Yacht Adventures</h1>
+        <p>Book your adventure and sail through the Mediterranean Sea</p>
+        <a href="#booking" class="button">Book Now</a>
     </header>
     <section id="booking">
-        <h2>Бронирование</h2>
-        <form>
-            <label for="date">Дата поездки:</label>
-            <input type="date" id="date" name="date">
-            
-            <label for="cabin">Тип каюты:</label>
-            <select id="cabin" name="cabin">
-                <option value="standard">Стандарт</option>
-                <option value="luxury">Люкс</option>
+        <h2>Booking</h2>
+        <form id="bookingForm">
+            <label for="adventureType">Type of Adventure:</label>
+            <select id="adventureType" name="adventureType" required>
+                <option value="one_day_solo">One Day Trip - Solo ($150)</option>
+                <option value="one_day_friend">One Day Trip + 1 Friend ($240)</option>
+                <option value="three_days_solo">Three Days Trip - Solo ($300)</option>
+                <option value="three_days_friend">Three Days Trip + 1 Friend ($450)</option>
+                <option value="week_solo">Week Trip - Solo ($600)</option>
+                <option value="week_friend">Week Trip + 1 Friend ($900)</option>
             </select>
             
-            <button type="submit">Подтвердить бронирование</button>
+            <button type="submit">Confirm Booking</button>
         </form>
+        <div id="confirmationMessage" class="hidden">Your booking is confirmed!</div>
     </section>
     <section id="gallery">
-        <h2>Галерея</h2>
+        <h2>Gallery</h2>
         <div class="gallery">
-            <img src="images/yacht.png" alt="Яхта">
-            <img src="images/cabin.png" alt="Каюта">
-            <img src="images/sea.png" alt="Море">
+            <img src="images/yacht.png" alt="Yacht">
+            <img src="images/cabin.png" alt="Cabin">
+            <img src="images/sea.png" alt="Sea">
         </div>
     </section>
     <section id="about">
-        <h2>О нас</h2>
-        <p>Мы предлагаем уникальные путешествия на яхте по Средиземному морю. Наша команда профессионалов сделает ваше путешествие незабываемым.</p>
+        <h2>About Us</h2>
+        <p>We offer unique yacht adventures through the Mediterranean Sea. Our team of professionals will make your journey unforgettable.</p>
     </section>
     <section id="reviews">
-        <h2>Отзывы</h2>
+        <h2>Reviews</h2>
         <div class="review">
-            <img src="images/avatar1.png" alt="Аватар">
-            <p>Невероятное путешествие! Всё было на высшем уровне.</p>
+            <img src="images/avatar1.png" alt="Avatar">
+            <p>Incredible journey! Everything was top-notch.</p>
         </div>
         <div class="review">
-            <img src="images/avatar2.png" alt="Аватар">
-            <p>Отличный сервис и великолепные виды. Рекомендую!</p>
+            <img src="images/avatar2.png" alt="Avatar">
+            <p>Excellent service and breathtaking views. Highly recommend!</p>
         </div>
     </section>
 </body>
