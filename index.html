@@ -10,56 +10,33 @@
 <body>
     <div class="background">
         <iframe 
-            width="650" 
-            height="450" 
             src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=7&overlay=wind&product=ecmwf&level=surface&lat=36.022&lon=29.993&detailLat=36.48314061639213&detailLon=28.883056640625004&marker=true" 
             frameborder="0">
         </iframe>
     </div>
-    <header>
-        <h1>Pixel Yacht Adventures</h1>
-        <p>Book your adventure and sail through the Mediterranean Sea</p>
-        <a href="#booking" class="button">Book Now</a>
-    </header>
-    <section id="booking">
-        <h2>Booking</h2>
-        <form id="bookingForm">
-            <label for="adventureType">Type of Adventure:</label>
-            <select id="adventureType" name="adventureType" required>
-                <option value="one_day_solo">One Day Trip - Solo ($150)</option>
-                <option value="one_day_friend">One Day Trip + 1 Friend ($240)</option>
-                <option value="three_days_solo">Three Days Trip - Solo ($300)</option>
-                <option value="three_days_friend">Three Days Trip + 1 Friend ($450)</option>
-                <option value="week_solo">Week Trip - Solo ($600)</option>
-                <option value="week_friend">Week Trip + 1 Friend ($900)</option>
-            </select>
-            
-            <button type="submit">Confirm Booking</button>
-        </form>
-        <div id="confirmationMessage" class="hidden">Your booking is confirmed!</div>
-    </section>
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="images/yacht.png" alt="Yacht">
-            <img src="images/cabin.png" alt="Cabin">
-            <img src="images/sea.png" alt="Sea">
-        </div>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We offer unique yacht adventures through the Mediterranean Sea. Our team of professionals will make your journey unforgettable.</p>
-    </section>
-    <section id="reviews">
-        <h2>Reviews</h2>
-        <div class="review">
-            <img src="images/avatar1.png" alt="Avatar">
-            <p>Incredible journey! Everything was top-notch.</p>
-        </div>
-        <div class="review">
-            <img src="images/avatar2.png" alt="Avatar">
-            <p>Excellent service and breathtaking views. Highly recommend!</p>
-        </div>
-    </section>
+    <div class="content">
+        <header>
+            <h1>Pixel Yacht Adventures</h1>
+            <p>Book your adventure and sail through the Mediterranean Sea</p>
+            <a href="#booking" class="button">Book Now</a>
+        </header>
+        <section id="booking">
+            <h2>Booking</h2>
+            <form id="bookingForm">
+                <label for="adventureType">Type of Adventure:</label>
+                <select id="adventureType" name="adventureType" required>
+                    <option value="one_day_solo">One Day Trip - Solo ($150)</option>
+                    <option value="one_day_friend">One Day Trip + 1 Friend ($240)</option>
+                    <option value="three_days_solo">Three Days Trip - Solo ($300)</option>
+                    <option value="three_days_friend">Three Days Trip + 1 Friend ($450)</option>
+                    <option value="week_solo">Week Trip - Solo ($600)</option>
+                    <option value="week_friend">Week Trip + 1 Friend ($900)</option>
+                </select>
+                
+                <button type="submit">Confirm Booking</button>
+            </form>
+            <div id="confirmationMessage" class="hidden">Your booking is confirmed!</div>
+        </section>
+    </div>
 </body>
 </html>
