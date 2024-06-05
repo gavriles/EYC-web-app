@@ -3,68 +3,65 @@ body, html {
     padding: 0;
 }
 
-.widget {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.background {
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.widget {
+    width: 100vw;
+    height: 100vh;
 }
 
 .content {
-    position: relative;
-    z-index: 1;
-}
-
-.content header {
-    background-color: rgba(255, 255, 255, 0.8); /* Белый полупрозрачный фон */
-    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    color: #FFFFFF; /* Белый текст */
 }
 
-.content header h1 {
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    padding: 20px;
+}
+
+header h1 {
     font-size: 32px;
     margin: 0;
 }
 
-.content header p {
+header p {
     font-size: 14px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #FFFFFF; /* Белый цвет кнопки */
-    color: #000000; /* Цвет текста кнопки */
-    text-decoration: none;
-    border-radius: 5px;
 }
 
 .booking-options {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+}
+
+.booking-option {
+    width: 100%;
 }
 
 .booking-button {
-    margin: 10px;
     padding: 10px 20px;
     background-color: #FFFFFF; /* Белый цвет кнопки */
     color: #000000; /* Цвет текста кнопки */
-    border: 2px solid #000000; /* Черная обводка кнопки */
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .booking-button:hover {
     background-color: #000000; /* Цвет кнопки при наведении */
     color: #FFFFFF; /* Цвет текста кнопки при наведении */
-}
-
-#confirmationMessage {
-    margin-top: 20px;
-    font-size: 18px;
-    color: green;
 }
