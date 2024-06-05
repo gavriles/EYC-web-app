@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование кают на яхте</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Приключения на Яхте</h1>
+        <p>Бронируйте вашу каюту и отправляйтесь в незабываемое путешествие по Средиземному морю</p>
+        <a href="#booking" class="button">Забронировать</a>
+    </header>
+    <section id="booking">
+        <h2>Бронирование</h2>
+        <form>
+            <label for="date">Дата поездки:</label>
+            <input type="date" id="date" name="date">
+            
+            <label for="cabin">Тип каюты:</label>
+            <select id="cabin" name="cabin">
+                <option value="standard">Стандарт</option>
+                <option value="luxury">Люкс</option>
+            </select>
+            
+            <button type="submit">Подтвердить бронирование</button>
+        </form>
+    </section>
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="images/yacht.png" alt="Яхта">
+            <img src="images/cabin.png" alt="Каюта">
+            <img src="images/sea.png" alt="Море">
+        </div>
+    </section>
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы предлагаем уникальные путешествия на яхте по Средиземному морю. Наша команда профессионалов сделает ваше путешествие незабываемым.</p>
+    </section>
+    <section id="reviews">
+        <h2>Отзывы</h2>
+        <div class="review">
+            <img src="images/avatar1.png" alt="Аватар">
+            <p>Невероятное путешествие! Всё было на высшем уровне.</p>
+        </div>
+        <div class="review">
+            <img src="images/avatar2.png" alt="Аватар">
+            <p>Отличный сервис и великолепные виды. Рекомендую!</p>
+        </div>
+    </section>
+</body>
+</html>
