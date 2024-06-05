@@ -1,0 +1,74 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Пиксельный шрифт */
+    background-color: #87CEEB; /* Небесно-голубой цвет фона */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-image: url('images/background-pixel-art.png'); /* Пиксельное фоновое изображение */
+    background-size: cover;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #FF6347; /* Цвет кнопки */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form select, form button {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    image-rendering: pixelated; /* Пикселизация изображения */
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    image-rendering: pixelated;
+    margin-bottom: 10px;
+}
