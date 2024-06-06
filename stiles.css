@@ -1,68 +1,168 @@
-body, html {
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
 }
 
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Главная страница */
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image img {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    height: 100vh;
+    object-fit: cover;
 }
 
-.widget {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.content {
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: #FFFFFF; /* Белый текст */
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+.hero-text button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #0056b3;
+}
+
+/* Приключения */
+#adventures {
+    padding: 20px;
+    text-align: center;
+}
+
+.adventure-block {
+    margin: 20px 0;
+}
+
+.adventure-block img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventure-block p {
+    font-size: 1.2rem;
+}
+
+.booking-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.booking-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Бронирование */
+#booking {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#booking form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#booking label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#booking input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#booking button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#booking button:hover {
+    background-color: #218838;
+}
+
+/* Судно */
+#yacht {
+    padding: 20px;
+    text-align: center;
+}
+
+.video {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.yacht-description {
+    margin-top: 20px;
+}
+
+.yacht-description p {
+    font-size: 1.2rem;
+}
+
+.yacht-description button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.yacht-description button:hover {
+    background-color: #0056b3;
+}
+
+/* Карта */
+#map {
     padding: 20px;
 }
 
-header h1 {
-    font-size: 32px;
-    margin: 0;
+.map-container {
+    max-width: 100%;
+    height: 500px; /* Adjust the height as needed */
+    margin: 0 auto;
 }
 
-header p {
-    font-size: 14px;
-}
-
-.booking-options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.booking-option {
+.map-container iframe {
     width: 100%;
+    height: 100%;
+    border: none;
 }
 
-.booking-button {
-    padding: 10px 20px;
-    background-color: #FFFFFF; /* Белый цвет кнопки */
-    color: #000000; /* Цвет текста кнопки */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
 
 .booking-button:hover {
     background-color: #000000; /* Цвет кнопки при наведении */
