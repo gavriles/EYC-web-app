@@ -1,14 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Screen Widget</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Яхтенные приключения</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="fullscreen-widget">
-        <iframe width="100%" height="100%" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=7&overlay=wind&product=ecmwf&level=surface&lat=36.022&lon=29.993&detailLat=36.48314061639213&detailLon=28.883056640625004&marker=true" frameborder="0"></iframe>
-    </div>
+    <!-- Главная страница -->
+    <section id="main">
+        <div class="hero-image">
+            <img src="images/hero-image.jpg" alt="Yacht Adventure">
+            <div class="hero-text">
+                <button onclick="scrollToAdventures()">Перейти к приключениям</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Приключения -->
+    <section id="adventures">
+        <div class="adventure-block">
+            <img src="images/uninhabited_islands.jpg" alt="Uninhabited Islands and Lagoons">
+            <p>Ненаселенные острова и лагуны: Представьте себе песчаные пляжи, пальмы и ярко-голубые воды океана с одинокой яхтой, стоящей на якоре у берега, создавая идеальные условия для отдыха и исследования.</p>
+        </div>
+        <div class="adventure-block">
+            <img src="images/fishing.jpg" alt="Fishing and Marine Adventures">
+            <p>Рыбалка и морские приключения: Погрузитесь в мир рыбалки и морских исследований. Встаньте на яхте с удочкой в руке, окруженные ярким подводным миром, полным разноцветных рыб и кораллов.</p>
+        </div>
+        <div class="adventure-block">
+            <img src="images/untouched_places.jpg" alt="Untouched by Civilization Places">
+            <p>Места, не тронутые цивилизацией: Исследуйте девственные пейзажи, не тронутые цивилизацией. Бродите по диким территориям с величественными горами и густыми лесами, где вас ждут тайны неизведанной природы.</p>
+        </div>
+        <div class="adventure-block">
+            <img src="images/sailing_weather.jpg" alt="Sailing in any Weather Conditions">
+            <p>Плавание в любых погодных условиях: Примите вызов плавания в любых погодных условиях. Плывите через штормы с натянутыми парусами, окруженные бурными волнами и драматичным, пасмурным небом.</p>
+        </div>
+        <div class="booking-buttons">
+            <button>One-day trip - (Solo - $150) + (2-5 friends = $90 per person)</button>
+            <button>Three day trip- (Solo - $300) (two people = $450)</button>
+            <button>One week trip- (Solo = $600) (two friends = $900)</button>
+        </div>
+    </section>
+
+    <!-- Бронирование -->
+    <section id="booking">
+        <form>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="people">Количество людей:</label>
+            <input type="number" id="people" name="people" required min="1">
+            
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Забронировать</button>
+        </form>
+    </section>
+
+    <!-- Судно -->
+    <section id="yacht">
+        <div class="video">
+            <video controls>
+                <source src="path/to/yacht_video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+        </div>
+        <div class="yacht-description">
+            <p>Описание яхты: Здесь будет текстовое описание характеристик и особенностей яхты.</p>
+            <button>Забронировать</button>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section id="map">
+        <div class="map-container">
+            <iframe width="2000" height="2000" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=°C&metricWind=default&zoom=6&overlay=wind&product=ecmwf&level=surface&lat=23.423&lon=42.253&detailLat=25.225&detailLon=42.253&detail=true&message=true" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
