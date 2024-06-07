@@ -15,36 +15,51 @@
 
   <style>
     body {
-      background-color: #0068a5;
-      color: #000;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       margin: 0;
+      overflow: hidden;
+    }
+
+    .widget-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
     }
 
     .iframe-container {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    }
-
-    .iframe-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border: 0;
+      pointer-events: none; /* чтобы iframe не перехватывал клики */
     }
 
-    /* Add your other styles here */
+    .content-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      z-index: 1; /* чтобы разметка была поверх iframe */
+    }
+
+    /* Добавьте ваш остальной CSS здесь */
 
   </style>
 </head>
 
 <body>
-  <div class="iframe-container">
-    <iframe src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=7&overlay=wind&product=ecmwf&level=surface&lat=34.931&lon=30.092&detailLat=-3.557&detailLon=68.071&detail=true&pressure=true&message=true" frameborder="0"></iframe>
+  <div class="widget-container">
+    <div class="iframe-container">
+      <iframe src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=7&overlay=wind&product=ecmwf&level=surface&lat=34.931&lon=30.092&detailLat=-3.557&detailLon=68.071&detail=true&pressure=true&message=true" frameborder="0"></iframe>
+    </div>
+    <div class="content-overlay">
+      <!-- Ваш HTML контент здесь -->
+      <h1>Привет, мир!</h1>
+      <p>Это содержимое размещено поверх фона виджета Windy.</p>
+    </div>
   </div>
 
   <!-- Google tag (gtag.js) -->
@@ -58,3 +73,4 @@
 </body>
 
 </html>
+
