@@ -1,227 +1,41 @@
-/* Основные стили */
+/* styles.css */
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    color: #333;
-    background-color: #f4f4f9;
 }
 
-/* Главная страница */
-.hero-image {
-    position: relative;
-    text-align: center;
-    color: white;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-.hero-image img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    filter: brightness(0.7);
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.hero-text button {
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    color: white;
-    background-color: #ff5722;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.hero-text button:hover {
-    background-color: #e64a19;
-}
-
-/* Приключения */
-#adventures {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#adventures h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-.adventure-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.adventure-block {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.adventure-block img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.adventure-block p {
+section {
     padding: 20px;
-    font-size: 1rem;
-    color: #666;
-}
-
-.booking-buttons {
-    margin-top: 30px;
-}
-
-.booking-buttons button {
-    margin: 10px;
-    padding: 15px 30px;
-    font-size: 1rem;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.booking-buttons button:hover {
-    background-color: #0056b3;
-}
-
-/* Бронирование */
-#booking {
-    padding: 50px 20px;
-    background-color: #f4f4f9;
-    text-align: center;
-}
-
-#booking h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-#booking form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#booking label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-#booking input {
-    width: calc(100% - 20px);
-    padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
 }
 
-#booking button {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.2rem;
-    color: white;
-    background-color: #28a745;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#booking button:hover {
-    background-color: #218838;
-}
-
-/* Судно */
-#yacht {
-    padding: 50px 20px;
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-}
-
-#yacht h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-.video {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.yacht-description {
-    margin-top: 20px;
-}
-
-.yacht-description p {
-    font-size: 1.2rem;
-    color: #666;
-    padding: 0 20px;
-}
-
-.yacht-description button {
-    padding: 15px 30px;
-    font-size: 1rem;
-    color: white;
-    background-color: #ff5722;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.yacht-description button:hover {
-    background-color: #e64a19;
-}
-
-/* Карта */
-#map {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#map h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-.map-container {
-    max-width: 100%;
-    height: 500px;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
+    padding: 10px 0;
 }
