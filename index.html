@@ -2,24 +2,17 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPJ7HEHPJJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-CPJ7HEHPJJ');
-  </script>
+  <meta charset="utf-8">
   <title></title>
-  <meta content="summary_large_image" name="twitter:card" />
-  <meta content="website" property="og:type" />
-  <meta content="" property="og:description" />
-  <meta content="https://mtwfxrr1al.preview-beefreedesign.com/sA4e" property="og:url" />
-  <meta content="https://pro-bee-beepro-thumbnail.getbee.io/messages/1211761/1197728/2185450/11185109_large.jpg" property="og:image" />
-  <meta content="" property="og:title" />
-  <meta content="" name="description" />
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="website" property="og:type">
+  <meta content="" property="og:description">
+  <meta content="https://mtwfxrr1al.preview-beefreedesign.com/sA4e" property="og:url">
+  <meta content="https://pro-bee-beepro-thumbnail.getbee.io/messages/1211761/1197728/2185450/11185109_large.jpg" property="og:image">
+  <meta content="" property="og:title">
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <style>
     body {
       background-color: #0068a5;
@@ -28,84 +21,40 @@
       margin: 0;
     }
 
-    .bee-row,
-    .bee-row-content {
+    .iframe-container {
       position: relative;
-      margin: 0;
-    }
-
-    .bee-row-content {
-      max-width: 1125px;
-      margin: 0 auto;
-      display: flex;
-    }
-
-    .bee-col-w4 {
-      flex-basis: 33%;
-    }
-
-    .bee-col-w12 {
-      flex-basis: 100%;
-    }
-
-    .bee-button a,
-    .bee-icon .bee-icon-label-right a {
-      text-decoration: none;
-    }
-
-    .bee-image img {
-      display: block;
       width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
     }
 
-    @media (max-width:768px) {
-      .bee-row-content:not(.no_stack) {
-        display: block;
-      }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
-    .bee-row-1,
-    .bee-row-2,
-    .bee-row-5,
-    .bee-row-7,
-    .bee-row-8 {
-      background-repeat: no-repeat;
-    }
+    /* Add your other styles here */
 
-    .bee-row-1,
-    .bee-row-2,
-    .bee-row-7,
-    .bee-row-8 {
-      background-color: #1a1a1a;
-    }
-
-    .bee-row-1 {
-      background-image: url('https://5281cdd967.imgdist.com/pub/bfra/6oznglhl/le6/m49/kbv/0605%20%281%29%20%281%29.gif');
-      background-position: top center;
-      background-size: auto;
-    }
-
-    .bee-row-1 .bee-col-1,
-    .bee-row-5 .bee-col-1 {
-      padding: 10px 25px;
-    }
-
-    .bee-row-2 .bee-col-1 .bee-block-3 {
-      padding: 10px 20px 35px;
-    }
-
-    .bee-row-2 .bee-col-1 .bee-block-4 {
-      padding: 0 10px;
-      text-align: center;
-    }
   </style>
 </head>
 
 <body>
   <div class="iframe-container">
-    <iframe width="650" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=7&overlay=wind&product=ecmwf&level=surface&lat=34.931&lon=30.092&detailLat=-3.557&detailLon=68.071&detail=true&pressure=true&message=true" frameborder="0"></iframe>
+    <iframe src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=7&overlay=wind&product=ecmwf&level=surface&lat=34.931&lon=30.092&detailLat=-3.557&detailLon=68.071&detail=true&pressure=true&message=true" frameborder="0"></iframe>
   </div>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPJ7HEHPJJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CPJ7HEHPJJ');
+  </script>
 </body>
 
 </html>
-
