@@ -1,1 +1,1 @@
-https://gavriles.github.io/Liberty-Yacht-Trip-2024/
+https://gavriles.github.io/Yacht-Trip-2024-Mediterranean
